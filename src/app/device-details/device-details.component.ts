@@ -1,3 +1,4 @@
+// Activity 5
 import { Component, OnInit, Input } from '@angular/core';
 import { Device } from './../models';
 
@@ -8,7 +9,7 @@ import { Device } from './../models';
 })
 export class DeviceDetailsComponent implements OnInit {
 
-  //@Input() deviceDetail: Device;
+  @Input() deviceDetail!: Device;
 
   constructor() { }
 
