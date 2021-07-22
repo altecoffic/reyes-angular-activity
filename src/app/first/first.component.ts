@@ -1,5 +1,4 @@
-// import { Component, OnInit, Input} from '@angular/core';
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-first',
@@ -8,18 +7,40 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 })
 export class FirstComponent implements OnInit {
 
-  visible: any = true;
-  @Output() firstEvent: EventEmitter<any> = new EventEmitter();
+  @Input() firstMessage = "";
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  clickEvent() {
-    this.visible = !this.visible;
-    this.firstEvent.emit(!this.visible ? "new message" : "_____");
-
-  }
-
 }
+
+
+
+
+
+// import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+
+// @Component({
+//   selector: 'app-first',
+//   templateUrl: './first.component.html',
+//   styleUrls: ['./first.component.css']
+// })
+// export class FirstComponent implements OnInit {
+
+//   visible: any = true;
+//   @Output() firstEvent: EventEmitter<any> = new EventEmitter();
+
+//   constructor() { }
+
+//   ngOnInit(): void {
+//   }
+
+//   clickEvent() {
+//     this.visible = !this.visible;
+//     this.firstEvent.emit(!this.visible ? "new message" : "_____");
+
+//   }
+
+// }
