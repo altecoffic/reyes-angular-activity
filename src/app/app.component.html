@@ -1,11 +1,39 @@
+<!-- Activity 6-->
+<h1>{{title}}</h1>
+<div *ngFor="let device of devices">
+    <app-device-details [deviceDetail]="device"></app-device-details>
+</div>
+<div>
+    <app-template-form (deviceDetail)="addDevice($event)"></app-template-form>
+</div>
 
-<!-- Activity 5 -->
-{{title}}
-<!-- <h1>Device Details View</h1>
+<router-outlet></router-outlet>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Activity 5  -->
+<!-- {{title}}
+<h1>Device Details View</h1>
 <div *ngFor="let device of devices">
     <app-device-details [deviceDetail]="device"></app-device-details>
 </div> -->
-<app-template-form></app-template-form>
 
 
 
@@ -14,19 +42,18 @@
 
 <!-- {{title}}
 <app-first (firstEvent)="appEvent($event)"></app-first>
-<app-second [secondMessage]="appMessage"></app-second> -->
+<app-second [secondMessage]="appMessage"></app-second> 
 
-<!-- <div *ngFor="let count of countNum">
+<div *ngFor="let count of countNum">
     <app-first [firstMessage]="count"></app-first>
-</div> -->
+</div>
 
 
-<!-- <app-first [firstMessage]="appMessage" ></app-first>
+<app-first [firstMessage]="appMessage" ></app-first>
 <app-second></app-second>
 <app-third (thirdEvent)="appEvent($event)"></app-third>
-<app-fourth></app-fourth> -->
+<app-fourth></app-fourth> 
 
-<!-- <div *ngFor="let message of appMessageArray">
+ <div *ngFor="let message of appMessageArray">
     <app-first [firstMessage]="message"></app-first>
 </div> -->
-
