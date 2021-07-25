@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output, EventEmitter, } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, } from '@angular/core';
 //import { formatCurrency } from '@angular/common';
 import { NgForm } from '@angular/forms';
 // import { Device } from './../models';

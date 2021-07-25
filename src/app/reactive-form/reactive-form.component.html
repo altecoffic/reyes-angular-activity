@@ -1,0 +1,16 @@
+<p>reactive-form works!</p>
+
+<form [formGroup]="updateForm" (ngSubmit)="updateDevice()">
+    <label for="name">Device Name: </label>
+    <input formControlName="name" type="text" id = "name">
+    <br>
+
+    <label for="brand">Brand: </label>
+    <input formControlName="brand" type="text" id = "brand">
+    <br>
+
+    <label for="model">Model: </label>
+    <input formControlName="model" type="text" id = "model">
+    <br>
+    <button type="submit">Update</button>
+</form>
