@@ -34,5 +34,6 @@ export class DeviceService {
   addDevice(device: Device){
     this.devices.push(device);
     console.log(this.devices);
+    
   }
 }
