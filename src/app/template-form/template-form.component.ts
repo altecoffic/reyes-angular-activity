@@ -33,6 +33,7 @@ export class TemplateFormComponent implements OnInit {
     this.deviceService.addDevice(form.value);
     this.router.navigate(['/deviceList']);
     // this.deviceDetail.emit(form.value);
+    
    
   }
   
