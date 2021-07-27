@@ -35,5 +35,6 @@ export class DeviceService {
     this.devices.push(device);
     console.log(this.devices);
     
+
   }
 }
