@@ -1,6 +1,7 @@
 <h1>Add Device</h1>
 
 <form #addForm="ngForm" (ngSubmit)="addDevice(addForm)">
+    
     <div class="form-group">
         <label for="name">Name: &nbsp; &nbsp;</label>
         <input type="text" required name="name" id="device-name-id" ngModel>
@@ -26,7 +27,7 @@
         <input type="text" name="serial" id="device-serial-id" ngModel>
     </div><br>
 
-    <button type="submit">Add Device</button>
+    <button (click)="goToList()" type="submit" router-link="/deviceList">Add Device</button>
 
 </form>
 

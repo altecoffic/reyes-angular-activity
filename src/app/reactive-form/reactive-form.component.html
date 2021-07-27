@@ -1,16 +1,27 @@
-<p>reactive-form works!</p>
+<h1>Update Device Info</h1>
 
 <form [formGroup]="updateForm" (ngSubmit)="updateDevice()">
-    <label for="name">Device Name: </label>
+  <input formControlName="id"  type="hidden" id="id" >
+    <label for="name">Name: &nbsp; </label>
     <input formControlName="name" type="text" id = "name">
-    <br>
+    <br><br>
 
-    <label for="brand">Brand: </label>
+    <label for="brand">Brand:&nbsp; </label>
+
     <input formControlName="brand" type="text" id = "brand">
-    <br>
+    <br><br>
 
-    <label for="model">Model: </label>
+    <label for="model">Model:&nbsp;</label>
     <input formControlName="model" type="text" id = "model">
-    <br>
+    <br><br>
+
+    <label for="year">Year: &nbsp;&nbsp;&nbsp;</label>
+    <input formControlName="year" type="text" id = "year">
+    <br><br>
+
+    <label for="serial">Serial:&nbsp; </label>
+    <input formControlName="serial" type="text" id = "serial">
+    <br><br>
     <button type="submit">Update</button>
+  
 </form>

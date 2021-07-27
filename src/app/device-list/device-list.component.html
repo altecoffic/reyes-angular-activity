@@ -1,0 +1,10 @@
+<!-- <div *ngIf = "isShow"></div> -->
+
+<h1>Device List</h1>
+
+<button (click)="addDevice()">Add Device</button>
+<br><br>
+
+<div *ngFor="let device of devices">
+    <app-device-details [deviceDetail]="device"></app-device-details>
+</div>

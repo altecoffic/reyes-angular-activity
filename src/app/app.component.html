@@ -1,17 +1,39 @@
-<!-- Activity 6-->
-<!-- <h1>{{title}}</h1>
-<div *ngFor="let device of devices">
-    <app-device-details [deviceDetail]="device"></app-device-details>
+<!-- Activity 7-->
+<!-- <p>{{title}}</p>
+<h1>Device Details View</h1> -->
+<!-- 
+    <app-device-list></app-device-list>
+
+<div *ngIf="!showUpdate">
+    <div *ngFor="let device of devices">
+        <app-device-details [deviceDetail]="device" (updateDetail)="updateDevice($event)">
+        </app-device-details>
+    </div>
 </div>
+
+<div *ngIf="showUpdate">
+    <app-reactive-form [device]="selectedDevice" (update)="updateDisplay($event)">
+    </app-reactive-form>
+</div> -->
+
+
+<router-outlet></router-outlet>
+
+
+<!-- <div *ngFor="let device of devices">
+    <app-device-details [deviceDetail]="device"></app-device-details>
+    <button (click)="update()">Update</button>
+</div>
+
 <div>
     <app-template-form (deviceDetail)="addDevice($event)"></app-template-form>
 </div> -->
 
-<app-reactive-form>
-    
-</app-reactive-form>
+<!-- <app-reactive-form>
 
-<router-outlet></router-outlet>
+</app-reactive-form> -->
+
+
 
 
 

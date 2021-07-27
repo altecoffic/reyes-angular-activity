@@ -1,6 +1,8 @@
 import { Component, OnInit, Output, EventEmitter, } from '@angular/core';
 //import { formatCurrency } from '@angular/common';
 import { NgForm } from '@angular/forms';
+import { Router } from '@angular/router';
+
 // import { Device } from './../models';
 // import { DeviceDetailsComponent } from '../device-details/device-details.component';
 // import { FormGroup,FormControl } from '@angular/forms';
@@ -14,16 +16,19 @@ import { NgForm } from '@angular/forms';
 export class TemplateFormComponent implements OnInit {
   @Output() deviceDetail = new EventEmitter();
 
-  constructor() { }
+
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
 
-  addDevice(form: NgForm){
-    this.deviceDetail.emit(form.value);
-    console.log(form.value);
+  goToList(){
+    this.router.navigate(['/deviceList']);
   }
-  // submit(login:any){
-  //   console.log('submitted',login);
-  // }
+  addDevice(form: NgForm){ 
+    this.router.navigate(['/deviceList']);
+    // this.deviceDetail.emit(form.value);
+   
+  }
+  
 }

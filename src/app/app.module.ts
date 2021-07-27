@@ -11,6 +11,7 @@ import { FourthComponent } from './fourth/fourth.component';
 import { DeviceDetailsComponent } from './device-details/device-details.component';
 import { TemplateFormComponent } from './template-form/template-form.component';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
+import { DeviceListComponent } from './device-list/device-list.component';
 
 //import { FormsModule } from '@angular/forms';
 @NgModule({
@@ -23,13 +24,14 @@ import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
     DeviceDetailsComponent,
     TemplateFormComponent,
     ReactiveFormComponent,
+    DeviceListComponent,
    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
